@@ -32,19 +32,24 @@ const Contact = () => {
             <section className='bg-sky'>
                 <div id="contact"></div>
                 <div className='py-40 max-w-screen-lg container mx-auto'>
+                    <h1 className='text-orange font-extrabold text-4xl'>Start a project</h1>
                     <div className='text-left grid gap-10 grid-cols-12' >
                         <div className='col-span-2 md:col-span-8'>
-                            <h1 className='text-orange font-extrabold text-4xl'>Get in touch!</h1>
-                            <p className='text-blue text-2xl mt-5 font-semibold'>Looking for expert backend solutions?</p>
-                            <p className='text-blue text-2xl mt-2 font'>Get in touch for consulting or hiring a Senior Backend Engineer to elevate your projects to the next level!</p>
-                            <a href="https://calendly.com/shiv-prsd19/30min" target="_blank" className='inline-flex justify-center rounded-lg text-lg font-semibold px-5 py-2 mt-5 cursor-pointer text-sky bg-indigo hover:bg-orange duration-200 items-center gap-1'>Lets do this <FaAngleRight /></a>
+                            <p className='text-blue text-2xl mt-5 font-semibold'>Interested in working together?</p>
+                            <p className='text-blue text-2xl mt-2 font'>We should queue up a time to chat. I’ll buy the coffee.</p>
+                            <a 
+                                href="https://calendly.com/shiv-prsd19/30min" target="_blank" 
+                                className='inline-flex justify-center rounded-lg text-lg font-semibold px-5 py-2 mt-5 cursor-pointer text-sky bg-indigo hover:bg-orange hover:scale-105 duration-200 items-center gap-1'
+                            >
+                                Lets do this <FaAngleRight />
+                            </a>
                         </div>
-                        <ul className='col-span-2 md:col-span-4'>
+                        <ul className='col-span-2 md:col-span-4 mt-5'>
                             {links.map(({id, link, socialComponent, text}) => (
                                 <li>
                                     <a 
                                         id={id}
-                                        className="flex items-center gap-2 mb-2 text-indigo hover:text-orange duration-500 font-semibold text-xl" 
+                                        className="flex items-center gap-2 mb-2 text-indigo hover:text-orange hover:scale-105 duration-500 font-semibold text-xl" 
                                         href={link} target="_blank"
                                     >
                                         {socialComponent} {text}

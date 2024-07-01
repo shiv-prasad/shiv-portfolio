@@ -4,17 +4,17 @@ const NavBar = () => {
 
     const links = [
         {
-            id: 1,
-            href: '#about',
+            id: 0,
+            href: '/',
             link: 'about',
         },
         {
-            id: 2,
-            href: '#experience',
+            id: 1,
+            href: '/experience',
             link: 'experience',
         },
         {
-            id: 3,
+            id: 2,
             href: '#contact',
             link: 'contact',
         }
@@ -26,8 +26,8 @@ const NavBar = () => {
                 <span id="home"></span>
                 <nav className='sticky top-0 z-40'>
                     <div className='max-w-screen-lg m-auto flex justify-between py-6 md:py-8'>
-                        <div className='font-bold text-2xl text-orange'>
-                            <a href="#">Shiv Prasad</a>
+                        <div className='text-4xl text-sky font-extrabold tracking-wider'>
+                            <a href="/">ShivPrasad.<span className='text-orange'>_</span></a>
                         </div>
                         <div>
                             <ul className='flex gap-4'>
