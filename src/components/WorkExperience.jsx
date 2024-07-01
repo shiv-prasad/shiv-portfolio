@@ -107,7 +107,7 @@ const WorkExperience = () => {
     <>
       <section id="experience" className='bg-indigo'>
         <div className='py-40 max-w-screen-lg container mx-auto'>
-            <div className='grid grid-cols-1'>
+            <div className='grid grid-cols-1 mb-20'>
                 <h1 className='text-6xl text-sky font-extrabold text-center'>Professional Experience</h1>
             </div>
             <div className='grid grid-cols-1'>
